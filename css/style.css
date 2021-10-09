@@ -1,3 +1,23 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    font-size: 24pt;
+}
+fieldset {
+    border: black solid;
+    border-radius: 10px;
+}
+label{
+    font-size: 14pt;
+}
+legend {
+    font-size: 16pt;
+    font-weight: bold;
+}
+input, select {
+    font-size: 14pt;
+}
 body {
     background-color: #264653;
   }
@@ -32,7 +52,7 @@ div {
 }
 #submit {
     margin: 10px;
-    
+    border-radius: 5px;
 }
 input:required +label::after {
     content: "*";
