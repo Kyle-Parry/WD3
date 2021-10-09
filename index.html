@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js" defer></script>
+    <title>Booking Form</title>
+</head>
+<body>
+    <main>
+        <h1>Make a Reservation</h1>
+        <form action="">
+            <fieldset>
+                <legend>Contact details</legend>
+                <div>
+                    <input type="text" name="first-name" id="first-name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div>
+                    <input type="text" name="last-name" id="last-name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email">
+                    <label for="email">Email Address</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation</legend>
+                <div>
+                    <select name="party-size" id="party-size" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="party-size">How many people are coming?</label>
+                </div>
+                <div>
+                    <input type="date" name="reservation-date" id="reservation-date" required>
+                    <label for="reservation-date">Reservation Date</label>
+                </div>
+                <div>
+                    <input type="time" name="reservation-time" id="reservation-time" min="11:00" max="20:00" step="900" value="11:00" required>
+                    <label for="reservation-time">Reservation Time</label>
+                </div>
+            </fieldset>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
