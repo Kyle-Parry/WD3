@@ -17,6 +17,7 @@ legend {
 }
 input, select {
     font-size: 14pt;
+    border: 2px solid black;
 }
 body {
     background-color: #264653;
@@ -47,6 +48,13 @@ label {
 input, select {
     order: 2;
 }
+p {
+    order: 3;
+    display: none;
+    font-weight: bold;
+    color: red;
+    font-size: 12pt;
+}
 div {
     display: grid;
 }
@@ -62,3 +70,12 @@ select:required +label::after {
     content: "*";
     color: red;
 }
+input:focus {
+    outline: none;
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ .error {
+    display: grid; 
+  }

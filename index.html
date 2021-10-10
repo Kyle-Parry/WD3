@@ -15,20 +15,24 @@
             <fieldset>
                 <legend>Contact details</legend>
                 <div>
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input type="text" name="first-name" id="first-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter First Name">
                     <label for="first-name">First Name</label>
+                    <p class="error">Please enter a valid Name</p>
                 </div>
                 <div>
-                    <input type="text" name="last-name" id="last-name" required>
+                    <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter Last Name">
                     <label for="last-name">Last Name</label>
+                    <p class="error">Please enter a valid Last Name</p>
                 </div>
                 <div>
-                    <input type="tel" name="phone" id="phone" required>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10,}" maxlength="10" required placeholder="Enter Phone Number">
                     <label for="phone">Phone Number</label>
+                    <p class="error">Please enter a valid Phone Number</p>
                 </div>
                 <div>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" placeholder="Enter Email Address">
                     <label for="email">Email Address</label>
+                    <p class="error">Please enter a valid Email Address</p>
                 </div>
             </fieldset>
             <fieldset>
@@ -49,12 +53,14 @@
                     <label for="party-size">How many people are coming?</label>
                 </div>
                 <div>
-                    <input type="date" name="reservation-date" id="reservation-date" required>
+                    <input type="date" name="reservation-date" id="reservation-date" required value="2021-10-22">
                     <label for="reservation-date">Reservation Date</label>
+                    <p class="error">Please enter a valid Date</p>
                 </div>
                 <div>
                     <input type="time" name="reservation-time" id="reservation-time" min="11:00" max="20:00" step="900" value="11:00" required>
                     <label for="reservation-time">Reservation Time</label>
+                    <p class="error">Please enter a time between 8am and 11pm</p>
                 </div>
             </fieldset>
             <input type="submit" name="submit" id="submit">
