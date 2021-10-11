@@ -79,6 +79,9 @@ input:not(:focus):not(:placeholder-shown):invalid {
 input:not(:focus):not(:placeholder-shown):invalid ~ .error {
     display: grid; 
 }
+a { position:relative; }
+a div { position:absolute; display:none; z-index:99; }
+a:hover div { display:block; }
 
 @media (max-width: 400px) {
     body {
