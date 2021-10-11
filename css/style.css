@@ -27,8 +27,10 @@ main {
     background-color: #2A9D8F;
     border-radius: 10px;
     margin: auto;
-    width: 70%;
     padding: 30px;
+    display: grid;
+    justify-content: center;
+    width: 50%;
 }
 form {
     width: 100%;
@@ -97,4 +99,19 @@ a:hover div { display:block; }
         display: none;
     }
 }
-  
+#burger {
+    height: 15vh;
+}
+
+.input-container { 
+    position:relative;
+    padding:0;
+    margin:0;
+}
+.input-image {
+    position:absolute;
+    bottom:0.2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}

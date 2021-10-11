@@ -11,6 +11,7 @@
 <body>
     <main>
         <h1>Make a Reservation</h1>
+        <img src="images/burger-logo.svg" alt="burger logo" id="burger">
         <form action="">
             <a href="#" id="hover-video">Help
                 <div>
@@ -19,22 +20,26 @@
             <fieldset>
                 <legend>Contact details</legend>
                 <div>
-                    <input type="text" name="first-name" id="first-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter First Name">
+                    <input type="text" name="first-name" id="first-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter First Name" class="input-container">
+                    <img src="images/noun_person_2005122.svg" alt="person" class="input-image">
                     <label for="first-name">First Name</label>
                     <p class="error">Please enter a valid Name</p>
                 </div>
                 <div>
-                    <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter Last Name">
+                    <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]{1,}" maxlength="60" required placeholder="Enter Last Name" class="input-container">
+                    <img src="images/noun_person_2005122.svg" alt="person" class="input-image">
                     <label for="last-name">Last Name</label>
                     <p class="error">Please enter a valid Last Name</p>
                 </div>
                 <div>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10,}" maxlength="10" required placeholder="Enter Phone Number">
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10,}" maxlength="10" required placeholder="Enter Phone Number" class="input-container">
+                    <img src="images/noun_person_2005122.svg" alt="person" class="input-image">
                     <label for="phone">Phone Number</label>
                     <p class="error">Please enter a valid Phone Number</p>
                 </div>
                 <div>
-                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" placeholder="Enter Email Address">
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" placeholder="Enter Email Address" class="input-container">
+                    <img src="images/noun_person_2005122.svg" alt="person" class="input-image">
                     <label for="email">Email Address</label>
                     <p class="error">Please enter a valid Email Address</p>
                 </div>
