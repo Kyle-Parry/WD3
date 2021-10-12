@@ -136,11 +136,11 @@ div:nth-of-type(2):after {
 }
 
 .input-container:nth-of-type(3):after {
-  background-image: url(../images/noun_Phone_1896473.svg);
+  background-image: url(../images/noun_phone_1896473.svg);
 }
 
 .input-container:nth-of-type(4):after {
-  background-image: url(../images/noun_Email_4307757.svg);
+  background-image: url(../images/noun_email_4307757.svg);
 }
 
 .input-container::after {
