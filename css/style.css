@@ -1,117 +1,159 @@
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 h1 {
-    font-size: 24pt;
+  font-size: 24pt;
 }
+
 fieldset {
-    border: black solid;
-    border-radius: 10px;
+  border: black solid;
+  border-radius: 10px;
 }
-label{
-    font-size: 14pt;
+
+label {
+  font-size: 14pt;
 }
+
 legend {
-    font-size: 16pt;
-    font-weight: bold;
+  font-size: 16pt;
+  font-weight: bold;
 }
-input, select {
-    font-size: 14pt;
-    border: 2px solid black;
+
+input,
+select {
+  font-size: 14pt;
+  border: 2px solid black;
 }
+
 body {
-    background-color: #264653;
-  }
+  background-color: #264653;
+}
 
 main {
-    background-color: #2A9D8F;
-    border-radius: 10px;
-    margin: auto;
-    padding: 30px;
-    display: grid;
-    justify-content: center;
-    width: 50%;
+  background-color: #2a9d8f;
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  width: 50%;
 }
+
 form {
-    width: 100%;
-    display: grid;
-    justify-content: center;
+  width: 100%;
+  display: grid;
+  justify-content: center;
 }
+
 fieldset {
-    width: 300px;
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: .8em;
-    padding: 1.2em;
+  width: 300px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 0.8em;
+  padding: 1.2em;
 }
+
 label {
-    order: 1;
+  order: 1;
 }
-input, select {
-    order: 2;
+
+input,
+select {
+  order: 2;
 }
+
 p {
-    order: 3;
-    display: none;
-    font-weight: bold;
-    color: red;
-    font-size: 12pt;
+  order: 3;
+  display: none;
+  font-weight: bold;
+  color: red;
+  font-size: 12pt;
 }
+
 div {
-    display: grid;
+  display: grid;
 }
+
 #submit {
-    margin: 10px;
-    border-radius: 5px;
+  margin: 10px;
+  border-radius: 5px;
 }
-input:required +label::after {
-    content: "*";
-    color: red;
+
+input:required + label::after {
+  content: "*";
+  color: red;
 }
-select:required +label::after {
-    content: "*";
-    color: red;
+
+select:required + label::after {
+  content: "*";
+  color: red;
 }
+
 input:focus {
-    outline: none;
+  outline: none;
 }
+
 input:not(:focus):not(:placeholder-shown):invalid {
-    border-color: red;
+  border-color: red;
 }
+
 input:not(:focus):not(:placeholder-shown):invalid ~ .error {
-    display: grid; 
+  display: grid;
 }
-a { position:relative; }
-a div { position:absolute; display:none; z-index:99; }
-a:hover div { display:block; }
+
+a {
+  position: relative;
+}
+
+a div {
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+
+a:hover div {
+  display: block;
+}
 
 @media (max-width: 400px) {
-    body {
-        background-color: #2A9D8F;
-    }
-    main {
-        background-color: none;
-    }
-    #email{
-        display: none;
-    }
-    label {
-        display: none;
-    }
-}
-#burger {
-    height: 15vh;
+  body {
+    background-color: #2a9d8f;
+  }
+
+  main {
+    background-color: none;
+  }
+
+  #email-container {
+    display: none;
+  }
 }
 
-.input-container { 
-    position:relative;
-    padding:0;
-    margin:0;
+#burger {
+  height: 15vh;
 }
-.input-image {
-    position:absolute;
-    bottom:0.2px;
-    right:5px;
-    width:24px;
-    height:24px;
+
+.input-container:nth-of-type(1):after,
+div:nth-of-type(2):after {
+  background-image: url(../images/noun_person_2005122.svg);
+}
+
+.input-container:nth-of-type(3):after {
+  background-image: url(../images/noun_Phone_1896473.svg);
+}
+
+.input-container:nth-of-type(4):after {
+  background-image: url(../images/noun_Email_4307757.svg);
+}
+
+.input-container::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  min-height: 20px;
+  min-width: 20px;
+  margin-top: 25px;
+  margin-left: 270px;
 }
