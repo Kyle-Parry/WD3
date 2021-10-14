@@ -34,6 +34,7 @@
               required
               placeholder="Enter First Name"
               class="input-field"
+              title="Please only enter letters"
             />
 
             <label for="first-name">First Name</label>
@@ -49,6 +50,7 @@
               required
               placeholder="Enter Last Name"
               class="input-field"
+              title="Please only enter letters"
             />
 
             <label for="last-name">Last Name</label>
@@ -64,6 +66,7 @@
               required
               placeholder="Enter Phone Number"
               class="input-field"
+              title="Please only enter numbers"
             />
 
             <label for="phone">Phone Number</label>
@@ -78,6 +81,7 @@
               maxlength="80"
               placeholder="Enter Email Address"
               class="input-field"
+              title="Please enter a valid Email Address"
             />
 
             <label for="email">Email Address</label>
@@ -123,9 +127,10 @@
               step="900"
               value="11:00"
               required
+              title="Enter a time between 11am and 8pm"
             />
             <label for="reservation-time">Reservation Time</label>
-            <p class="error">Please enter a time between 8am and 11pm</p>
+            <p class="error">Please enter a time between 11am and 8pm</p>
           </div>
         </fieldset>
         <input type="submit" name="submit" id="submit" />
