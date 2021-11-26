@@ -80,12 +80,12 @@ div {
   border-radius: 5px;
 }
 
-input:required + label::after {
+input:required+label::after {
   content: "*";
   color: red;
 }
 
-select:required + label::after {
+select:required+label::after {
   content: "*";
   color: red;
 }
@@ -98,11 +98,11 @@ input:not(:active):not(:placeholder-shown):invalid {
   border-color: red;
 }
 
-input:not(:active):not(:placeholder-shown):invalid ~ .error {
+input:not(:active):not(:placeholder-shown):invalid~.error {
   display: grid;
 }
 
-a:hover ~ iframe,
+a:hover~iframe,
 iframe:hover {
   display: block;
   position: absolute;
@@ -112,19 +112,7 @@ iframe {
   display: none;
 }
 
-@media (max-width: 400px) {
-  body {
-    background-color: #2a9d8f;
-  }
 
-  main {
-    background: none;
-  }
-
-  #email-container {
-    display: none;
-  }
-}
 
 #burger {
   height: 15vh;
@@ -153,7 +141,45 @@ div:nth-of-type(2):after {
   margin-top: 25px;
   margin-left: 270px;
 }
+
 video {
   width: 560px;
   height: 315px;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: #2a9d8f;
+  }
+
+  label {
+    display: none;
+  }
+
+  form {
+    width: 100vw;
+  }
+
+  fieldset {
+    width: 88vw;
+  }
+
+  .input-container::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    min-height: 20px;
+    min-width: 20px;
+    margin-top: 4px;
+    margin-left: 325px;
+  }
+
+  main {
+    background: none;
+  }
+
+  #email-container {
+    display: none;
+  }
 }
